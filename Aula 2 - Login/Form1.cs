@@ -23,7 +23,13 @@ namespace Aula_2___Login
             {
                 labelresultado.Text = "Usuário é obrigatório!";
                 labelresultado.ForeColor = Color.Red;
+                return;
             }
+            else if (senha == null || senha == "")
+                {
+                    labelresultado.Text = "A senha é obrigatório!";
+                    labelresultado.ForeColor = Color.Red;
+                } 
             else if (usuario == "valerya.cruz" && senha == "12345")
             {
                 labelresultado.Text = "Autenticado com sucesso";
@@ -31,7 +37,7 @@ namespace Aula_2___Login
             }
             else
             {
-                labelresultado.Text = "Usuário e Senha incorretos";
+                labelresultado.Text = "Usuário ou Senha incorretos";
                 labelresultado.ForeColor= Color.Red;
             }
               
