@@ -47,7 +47,50 @@ namespace Aula_2___Login
             else
             {
                 labelresultado.Text = "Usuário ou Senha incorretos";
-                labelresultado.ForeColor= Color.Red;
+                labelresultado.ForeColor = Color.Red;
+            }
+        }
+
+        private void EntrarCriar_Click(object sender, EventArgs e)
+        {
+            {
+                string criarUsuario = BoxUsuarioCriar.Text;
+                string criarSenha = BoxSenhaCriar.Text;
+
+                if (string.IsNullOrWhiteSpace(criarUsuario))
+                {
+                    labelRespostaCriar.Text = "Usuário é obrigatório!";
+                    labelRespostaCriar.ForeColor = Color.Red;
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(criarSenha))
+                {
+                    labelRespostaCriar.Text = "A senha é obrigatório!";
+                    labelRespostaCriar.ForeColor = Color.Red;
+                    return;
+                }
+
+                bool usuarioEncontrado = false;
+
+                for (int i = 0; i < listaUsuario.Count; i++)
+                {
+                    if (criarUsuario == listaUsuario[i])
+                    {
+                        usuarioEncontrado = true;
+                    }
+                }
+
+                if (!usuarioEncontrado)
+                {
+                    listaUsuario.Add(criarUsuario);
+                    listaSenha.Add(criarSenha);
+                    labelRespostaCriar.Text = "Usuario cadastrado.";
+                    labelRespostaCriar.ForeColor = Color.Goldenrod;
+                }
+                else
+                {
+                    labelRespostaCriar.Text = "Já existe um um usuario cadastrado.";
+                }
             }
         }
     }

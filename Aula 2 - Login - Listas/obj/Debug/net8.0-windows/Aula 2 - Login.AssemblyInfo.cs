@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aula 2 - Login")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfc5253cfdf3751036d6ebd84f59dfa4b23d6c62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f72ba8447a0061c3e6b7fb7e9ee4db6410865af4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aula 2 - Login")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aula 2 - Login")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
