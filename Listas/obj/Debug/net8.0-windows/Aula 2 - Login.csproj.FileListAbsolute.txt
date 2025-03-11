@@ -34,3 +34,14 @@ D:\CursoSistemas\senacsistemas\Aula 2 - Login - Listas\bin\Debug\net8.0-windows\
 D:\CursoSistemas\senacsistemas\Aula 2 - Login - Listas\bin\Debug\net8.0-windows\Aula 2 - Login.pdb
 D:\CursoSistemas\senacsistemas\Aula 2 - Login - Listas\obj\Debug\net8.0-windows\Aula 2 - Login.genruntimeconfig.cache
 D:\CursoSistemas\senacsistemas\Aula 2 - Login - Listas\obj\Debug\net8.0-windows\ref\Aula 2 - Login.dll
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula_2___Login.Login.resources
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula_2___Login.Properties.Resources.resources
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.csproj.GenerateResource.cache
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.GeneratedMSBuildEditorConfig.editorconfig
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.AssemblyInfoInputs.cache
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.AssemblyInfo.cs
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.csproj.CoreCompileInputs.cache
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.sourcelink.json
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.dll
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\refint\Aula 2 - Login.dll
+D:\CursoSistemas\senacsistemas\Listas\obj\Debug\net8.0-windows\Aula 2 - Login.pdb

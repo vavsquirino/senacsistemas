@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Aula 2 - Login")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("calculadora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8033409a82ef8b72e276f5705222d9664c403513")]
-[assembly: System.Reflection.AssemblyProductAttribute("Aula 2 - Login")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Aula 2 - Login")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5789b3631d36d39eb193a2cbce69e1e30cb2d2c")]
+[assembly: System.Reflection.AssemblyProductAttribute("calculadora")]
+[assembly: System.Reflection.AssemblyTitleAttribute("calculadora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
