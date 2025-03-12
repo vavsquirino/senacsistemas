@@ -32,6 +32,8 @@
             labelResultado = new Label();
             button1 = new Button();
             BoxValor2 = new TextBox();
+            comboBoxOperacao = new ComboBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // BoxValor1
@@ -49,6 +51,7 @@
             labelResultado.Size = new Size(160, 15);
             labelResultado.TabIndex = 2;
             labelResultado.Text = "Insira os valores para calcular";
+            labelResultado.Click += labelResultado_Click;
             // 
             // button1
             // 
@@ -62,16 +65,38 @@
             // 
             // BoxValor2
             // 
-            BoxValor2.Location = new Point(323, 143);
+            BoxValor2.Location = new Point(323, 149);
             BoxValor2.Name = "BoxValor2";
             BoxValor2.Size = new Size(182, 23);
             BoxValor2.TabIndex = 4;
+            // 
+            // comboBoxOperacao
+            // 
+            comboBoxOperacao.FormattingEnabled = true;
+            comboBoxOperacao.Items.AddRange(new object[] { "Soma", "Subtração", "Multipliacação", "Divisão" });
+            comboBoxOperacao.Location = new Point(354, 101);
+            comboBoxOperacao.Name = "comboBoxOperacao";
+            comboBoxOperacao.Size = new Size(121, 23);
+            comboBoxOperacao.TabIndex = 5;
+            comboBoxOperacao.SelectedIndexChanged += comboBoxOperacao_SelectedIndexChanged;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(386, 243);
+            button2.Name = "button2";
+            button2.Size = new Size(69, 20);
+            button2.TabIndex = 6;
+            button2.Text = "Entrar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(comboBoxOperacao);
             Controls.Add(BoxValor2);
             Controls.Add(button1);
             Controls.Add(labelResultado);
@@ -88,5 +113,7 @@
         private Label labelResultado;
         private Button button1;
         private TextBox BoxValor2;
+        private ComboBox comboBoxOperacao;
+        private Button button2;
     }
 }

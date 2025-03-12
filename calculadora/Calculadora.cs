@@ -24,31 +24,81 @@ namespace calculadora
                 return;
             }
 
-            double valores1 = Convert.ToDouble(BoxValor1.Text);
-            double valores2 = Convert.ToDouble(BoxValor2.Text);
+            //double valores1 = Convert.ToDouble(BoxValor1.Text);
+            //double valores2 = Convert.ToDouble(BoxValor2.Text);
+            //double resultadoFinal = 0;
+
+            if (!double.TryParse(Valor1, out double valores1))
+            {
+                labelResultado.Text = "O valor deve ser um número válido";
+                return;
+            }
+            if (!double.TryParse(Valor2, out double valores2))
+            {
+                labelResultado.Text = "O valor deve ser um número válido";
+                return;
+            }
+
             double resultadoFinal = 0;
 
-            labelResultado.Text = $"Resultado = {resultadoFinal.ToString()} ";
+            int[] operacoes = { 0, 1, 2, 3 };
 
-            int[] operacoes = { 1, 2, 3, 4 };
-
-            for (int i = 0; i < valores1; i++)
+            for (int i = 0; i < operacoes.Length; i++)
             {
+                operacoes[i] = (comboBoxOperacao.SelectedIndex);
                 switch (operacoes[i])
                 {
-                    case 1: // Soma
+                    case 0: // Soma
                         resultadoFinal = valores1 + valores2;
-
                         labelResultado.Text = ($"Operação {i + 1} (Soma): {valores1} + {valores2} = {resultadoFinal}");
                         break;
 
-                    case 2: // Subtração
+                    case 1: // Subtração
                         resultadoFinal = valores1 - valores2;
                         labelResultado.Text = ($"Operação {i + 1} (Subtração): {valores1} - {valores2} = {resultadoFinal}");
                         break;
 
+                    case 2: // Multiplicação
+                        resultadoFinal = valores1 * valores2;
+                        labelResultado.Text = ($"Operação {i + 1} (Multipliacação): {valores1} * {valores2} = {resultadoFinal}");
+                        break;
+
+                    case 3: // Divisão
+                        resultadoFinal = valores1 / valores2;
+                        labelResultado.Text = ($"Operação {i + 1} (Divisão): {valores1} / {valores2} = {resultadoFinal}");
+
+                        if (resultadoFinal != 0)
+                        {
+                            labelResultado.Text = ($"Operação {i + 1} (Divisão): {valores1} / {valores2} = {resultadoFinal}");
+                            break;
+                        }
+                        else
+                        {
+                            resultadoFinal.CompareTo($"Operação {i + 1} (Divisão): Divisão por zero não é permitida");
+                        }
+                        break;
                 }
             }
+
+            labelResultado.Text = resultadoFinal + "";
+        }
+
+        private void comboBoxOperacao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelResultado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+
+            this.Hide();
         }
     }
 }
