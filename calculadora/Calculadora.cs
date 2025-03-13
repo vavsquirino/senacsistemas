@@ -24,10 +24,6 @@ namespace calculadora
                 return;
             }
 
-            //double valores1 = Convert.ToDouble(BoxValor1.Text);
-            //double valores2 = Convert.ToDouble(BoxValor2.Text);
-            //double resultadoFinal = 0;
-
             if (!double.TryParse(Valor1, out double valores1))
             {
                 labelResultado.Text = "O valor deve ser um número válido";
@@ -95,7 +91,7 @@ namespace calculadora
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            Perimetro form = new Perimetro();
             form.Show();
 
             this.Hide();
