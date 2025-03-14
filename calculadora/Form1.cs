@@ -62,7 +62,6 @@ namespace calculadora
             float perimetro = calLado + calLado + calLado + calLado;
             float volume = calLado * calLado * calLado;
 
-
         }
     }
 }

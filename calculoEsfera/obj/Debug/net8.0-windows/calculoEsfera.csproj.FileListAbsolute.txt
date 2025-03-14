@@ -1,0 +1,17 @@
+D:\CursoSistemas\senacsistemas\calculoEsfera\bin\Debug\net8.0-windows\calculoEsfera.exe
+D:\CursoSistemas\senacsistemas\calculoEsfera\bin\Debug\net8.0-windows\calculoEsfera.deps.json
+D:\CursoSistemas\senacsistemas\calculoEsfera\bin\Debug\net8.0-windows\calculoEsfera.runtimeconfig.json
+D:\CursoSistemas\senacsistemas\calculoEsfera\bin\Debug\net8.0-windows\calculoEsfera.dll
+D:\CursoSistemas\senacsistemas\calculoEsfera\bin\Debug\net8.0-windows\calculoEsfera.pdb
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.Form1.resources
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.csproj.GenerateResource.cache
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.GeneratedMSBuildEditorConfig.editorconfig
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.AssemblyInfoInputs.cache
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.AssemblyInfo.cs
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.csproj.CoreCompileInputs.cache
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.sourcelink.json
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.dll
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\refint\calculoEsfera.dll
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.pdb
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\calculoEsfera.genruntimeconfig.cache
+D:\CursoSistemas\senacsistemas\calculoEsfera\obj\Debug\net8.0-windows\ref\calculoEsfera.dll
