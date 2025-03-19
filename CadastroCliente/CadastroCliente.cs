@@ -8,16 +8,16 @@ namespace CadastroCliente
 {
     internal class CadastroCliente
     {
-        public int id { get; set; }
-        public string nome { get; set; }
-        public string dataNascimento { get; set; }
-        public string telefone { get; set; }
-        public string email { get; set; }
-        public EnderecoCliente endereco { get; set; }
-        public GeneroCliente genero { get; set; }
-        public string nomeSocial { get; set; }
-        public EtniaCliente etnia { get; set; }
-        public bool estrangeiro { get; set; }
-        public TipoCliente tipo { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string DataNascimento { get; set; }
+        public string Telefone { get; set; }
+        public string Email { get; set; }
+        public EnderecoCliente Endereco { get; set; }
+        public GeneroCliente Genero { get; set; }
+        public string NomeSocial { get; set; }
+        public EtniaCliente Etnia { get; set; }
+        public bool Estrangeiro { get; set; }
+        public TipoCliente Tipo { get; set; }
     } 
 }

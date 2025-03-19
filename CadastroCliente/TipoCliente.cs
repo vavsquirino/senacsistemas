@@ -2,7 +2,7 @@
 {
     internal enum TipoCliente
     {
-        PF,
-        PJ
+        PessoaFisica,
+        PessoaJuridica
     }
 }

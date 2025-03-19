@@ -1,4 +1,3 @@
-D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.Form1.resources
 D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.csproj.GenerateResource.cache
 D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.GeneratedMSBuildEditorConfig.editorconfig
 D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.AssemblyInfoInputs.cache
@@ -15,3 +14,4 @@ D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\refint\C
 D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.pdb
 D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.genruntimeconfig.cache
 D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\ref\CadastroCliente.dll
+D:\CursoSistemas\senacsistemas\CadastroCliente\obj\Debug\net8.0-windows\CadastroCliente.FormCadastroDeClientes.resources

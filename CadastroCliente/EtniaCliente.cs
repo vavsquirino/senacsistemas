@@ -8,5 +8,11 @@ namespace CadastroCliente
 {
     internal enum EtniaCliente
     {
+        Indígena,
+        Branca,
+        Negra,
+        Parda,
+        Amarela,
+        NãoDeclarada
     }
 }

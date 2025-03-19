@@ -8,5 +8,9 @@ namespace CadastroCliente
 {
     internal enum GeneroCliente
     {
+        Masculino,
+        Feminino,
+        Outro,
+        NãoDeclarado
     }
 }
