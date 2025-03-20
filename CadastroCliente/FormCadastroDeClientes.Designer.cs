@@ -63,6 +63,8 @@
             labelEtnia = new Label();
             button1 = new Button();
             labelResultado = new Label();
+            textBoxSobrenome = new TextBox();
+            labelSobrenome = new Label();
             SuspendLayout();
             // 
             // labelRealizeCadastro
@@ -78,15 +80,15 @@
             // 
             textBoxNome.Location = new Point(23, 88);
             textBoxNome.Name = "textBoxNome";
-            textBoxNome.Size = new Size(233, 23);
+            textBoxNome.Size = new Size(121, 23);
             textBoxNome.TabIndex = 1;
             // 
             // maskedTextBoxNasci
             // 
-            maskedTextBoxNasci.Location = new Point(262, 88);
+            maskedTextBoxNasci.Location = new Point(277, 88);
             maskedTextBoxNasci.Mask = "00/00/0000";
             maskedTextBoxNasci.Name = "maskedTextBoxNasci";
-            maskedTextBoxNasci.Size = new Size(128, 23);
+            maskedTextBoxNasci.Size = new Size(113, 23);
             maskedTextBoxNasci.TabIndex = 2;
             maskedTextBoxNasci.ValidatingType = typeof(DateTime);
             // 
@@ -187,7 +189,6 @@
             textBoxBairro.Name = "textBoxBairro";
             textBoxBairro.Size = new Size(133, 23);
             textBoxBairro.TabIndex = 14;
-            textBoxBairro.Text = "Bairro";
             // 
             // textBoxCidade
             // 
@@ -296,7 +297,7 @@
             // labelNascimento
             // 
             labelNascimento.AutoSize = true;
-            labelNascimento.Location = new Point(262, 70);
+            labelNascimento.Location = new Point(274, 70);
             labelNascimento.Name = "labelNascimento";
             labelNascimento.Size = new Size(115, 15);
             labelNascimento.TabIndex = 29;
@@ -365,12 +366,30 @@
             labelResultado.Size = new Size(0, 15);
             labelResultado.TabIndex = 36;
             // 
+            // textBoxSobrenome
+            // 
+            textBoxSobrenome.Location = new Point(153, 88);
+            textBoxSobrenome.Name = "textBoxSobrenome";
+            textBoxSobrenome.Size = new Size(118, 23);
+            textBoxSobrenome.TabIndex = 37;
+            // 
+            // labelSobrenome
+            // 
+            labelSobrenome.AutoSize = true;
+            labelSobrenome.Location = new Point(153, 70);
+            labelSobrenome.Name = "labelSobrenome";
+            labelSobrenome.Size = new Size(68, 15);
+            labelSobrenome.TabIndex = 38;
+            labelSobrenome.Text = "Sobrenome";
+            // 
             // FormCadastroDeClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(691, 495);
+            Controls.Add(labelSobrenome);
+            Controls.Add(textBoxSobrenome);
             Controls.Add(labelResultado);
             Controls.Add(button1);
             Controls.Add(labelEtnia);
@@ -449,5 +468,7 @@
         private Label labelEtnia;
         private Button button1;
         private Label labelResultado;
+        private TextBox textBoxSobrenome;
+        private Label labelSobrenome;
     }
 }
