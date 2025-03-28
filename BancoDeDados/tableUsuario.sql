@@ -6,8 +6,6 @@ CREATE TABLE IF NOT EXISTS youtubers (
 	objetivo VARCHAR(100) NOT NULL
 );
 
-DROP TABLE youtubers;
-
 SELECT 
     *
 FROM

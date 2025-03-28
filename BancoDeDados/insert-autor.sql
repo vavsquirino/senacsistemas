@@ -1,12 +1,10 @@
-SELECT DISTINCT
-    LOWER(autor)
+SELECT
+*
 FROM
-    livro;
+    autor;
     
-INSERT INTO autor (
- nome,
-    documento
-) VALUES 
+INSERT INTO autor (nome, documento )
+VALUES 
 ('rafael sousa', '04954132088'),
 ('mark manson', '09978898026'),
 ('monteiro lobatto', '35505614078'),
