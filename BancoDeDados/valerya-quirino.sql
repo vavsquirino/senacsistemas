@@ -36,10 +36,14 @@ VALUES
 SELECT COUNT(*) FROM pedido;
 SELECT AVG(valor) FROM pedido;
 SELECT cliente_id, SUM(valor) FROM pedido GROUP BY cliente_id;
-SELECT * FROM cliente INNER JOIN pedido ON cliente.id = pedido.cliente_id;
-SELECT
-    *
-FROM
-    cliente
-        LEFT JOIN
-    pedido ON cliente.id = pedido.cliente_id;
+SELECT * FROM cliente INNER JOIN pedido ON cliente.id = pedido.cliente_id; 
+SELECT * FROM cliente LEFT JOIN pedido ON cliente.id = pedido.cliente_id;
+SELECT * FROM cliente INNER JOIN pedido ON cliente.id = pedido.cliente_id WHERE valor >= (SELECT AVG(valor) FROM pedido);
+SELECT * FROM cliente INNER JOIN pedido ON cliente.id = pedido.cliente_id WHERE valor >= 1000;
+
+INSERT INTO cliente (nome, idade, cidade, saldo)
+VALUES
+('Rafael', 27, 'Porto Alegre', 2100.00);
+
+UPDATE cliente SET saldo = saldo + (saldo * 0.10);
+DELETE FROM pedido WHERE valor <= 500;
