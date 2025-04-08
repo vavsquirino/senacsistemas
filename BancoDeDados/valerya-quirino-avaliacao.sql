@@ -58,7 +58,7 @@ VALUES
 ('Fernanda Rocha', 'Curitiba', 30);
 
 SELECT * FROM produto WHERE categoria = 'eletrônicos' AND preco > 3000.00 ORDER BY preco DESC;
-SELECT * FROM cliente WHERE NOT cidade = 'São Paulo' AND idade = 30;
+SELECT * FROM cliente WHERE NOT cidade = 'São Paulo' AND idade > 30;
 SELECT * FROM pedido WHERE data_pedido BETWEEN '2024-03-10' AND '2024-03-15' ORDER BY data_pedido ASC;
 SELECT * FROM produto WHERE estoque < 10 ORDER BY estoque ASC;
 SELECT * FROM fornecedor WHERE NOT cidade = 'Rio de Janeiro' AND nome NOT LIKE 't%';
@@ -69,6 +69,63 @@ SELECT categoria, SUM(estoque) AS total_estoque FROM produto GROUP BY categoria;
 SELECT id, produto_id, quantidade FROM pedido WHERE quantidade = (SELECT MAX(quantidade) FROM pedido);
 SELECT cidade, COUNT(*) AS total_clientes FROM cliente GROUP BY cidade ORDER BY total_clientes DESC;
 
-SELECT * FROM produto INNER JOIN fornecedor ON fornecedor.id = produto.fornecedor_id ORDER BY fornecedor.nome;
+SELECT produto.nome AS NomeProduto, fornecedor.nome AS NomeFornecedor FROM produto INNER JOIN fornecedor ON fornecedor.id = produto.fornecedor_id ORDER BY fornecedor.nome;
+SELECT pedido.id AS Pedido, cliente.nome AS NomeCliente, produto.nome AS ProdutoComprado, data_pedido FROM pedido INNER JOIN cliente ON cliente.id = pedido.cliente_id INNER JOIN produto ON produto.id = pedido.produto_id ORDER BY data_pedido ASC;
+SELECT pedido.id AS Pedido, cliente.nome AS NomeCliente, produto.nome AS ProdutoComprado, fornecedor.nome AS Empresa FROM pedido INNER JOIN cliente ON cliente.id = pedido.cliente_id INNER JOIN produto ON produto.id = pedido.produto_id INNER JOIN fornecedor ON produto.fornecedor_id = fornecedor.id;
+SELECT SUM(quantidade) AS QuantidadeProdutos, cliente.nome AS NomeCliente FROM pedido INNER JOIN cliente ON cliente.id = pedido.cliente_id GROUP BY cliente_id ORDER BY SUM(quantidade) DESC;
 
-SELECT * FROM pedido INNER JOIN cliente ON cliente.id = pedido.cliente_id ORDER BY data_pedido ASC;
+SELECT 
+    categoria, nome AS poduto, preco
+FROM
+    produto
+WHERE
+    preco > (SELECT 
+            AVG(preco)
+        FROM
+            produto)
+ORDER BY categoria;
+
+SELECT 
+    *
+FROM
+    produto p
+WHERE
+    preco > (SELECT 
+            AVG(preco)
+        FROM
+            produto pr
+		WHERE
+        p.categoria = pr.categoria)
+ORDER BY p.categoria;
+
+UPDATE produto SET preco = preco * 1.1 WHERE categoria = 'Eletrônicos';
+DELETE FROM pedido WHERE cliente_id = (SELECT cliente.id FROM cliente WHERE cidade = 'Curitiba');
+
+INSERT INTO cliente (nome, cidade, idade)
+VALUES
+('Ricardo Lopes', 'Porto Alegre', 38);
+
+INSERT INTO pedido (produto_id, quantidade, data_pedido, cliente_id)
+VALUES
+(2, 2, '2024-03-25', 1);
+
+SELECT 
+    cliente.nome AS Cliente,
+    pedido.id,
+    produto.categoria AS Categoria
+FROM
+    pedido
+        INNER JOIN
+    cliente ON cliente.id = pedido.cliente_id
+        INNER JOIN
+    produto ON produto.id = pedido.produto_id
+WHERE
+    produto.id = ANY (SELECT 
+            produto.id
+        FROM
+            produto
+        WHERE
+            categoria = 'Móveis');
+
+
+
