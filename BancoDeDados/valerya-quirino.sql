@@ -46,4 +46,5 @@ VALUES
 ('Rafael', 27, 'Porto Alegre', 2100.00);
 
 UPDATE cliente SET saldo = saldo + (saldo * 0.10);
-DELETE FROM pedido WHERE valor <= 500;
+SELECT * FROM pedido;
+DELETE FROM pedido WHERE cidade = 'Curitiba';

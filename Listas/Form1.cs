@@ -1,3 +1,4 @@
+using MySql.Data.MySqlClient;
 using System.Diagnostics.Eventing.Reader;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -5,19 +6,15 @@ namespace Aula_2___Login
 {
     public partial class Login : Form
     {
-        
-        Usuario pablo = new Usuario() { Email = "pablo.vittar@gmil.com", Senha = "12345Abc!" };
-        Usuario sakuna = new Usuario() { Email = "sakuna.silva@gmil.com", Senha = "Sete7Sete!" };
-
-        List<Usuario> usuarios = new List<Usuario>();
+        private static readonly string ConnectionString = "datasource=localhost;username=root;password=;database=curso;";
+        private readonly MySqlConnection Connection = new MySqlConnection(ConnectionString);
 
         public Login()
         {
             InitializeComponent();
-            usuarios.Add(new Usuario() { Email = "neymar.jr@gmil.com", Senha = "Brun@123" });
-            usuarios.Add (new Usuario() { Email = "pablo.vittar@gmil.com", Senha = "12345Abc!" });
-            usuarios.Add (new Usuario() { Email = "sakuna.silva@gmil.com", Senha = "Sete7Sete!" });
         }
+
+        List<Usuario> usuarios = new List<Usuario>();
 
         private void button1_Click(object sender, EventArgs e)
         {
