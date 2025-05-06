@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ListaAtividades")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Cadastro de Pordutos - Grupo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5920b1f1d38fad01088df297c45a3d534c0afee")]
-[assembly: System.Reflection.AssemblyProductAttribute("ListaAtividades")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ListaAtividades")]
+[assembly: System.Reflection.AssemblyProductAttribute("Cadastro de Pordutos - Grupo")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Cadastro de Pordutos - Grupo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
