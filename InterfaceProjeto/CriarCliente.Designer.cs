@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriarCliente));
             buttonVoltarMenu = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
@@ -69,33 +69,24 @@
             label10 = new Label();
             label4 = new Label();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBoxDadosCliente.SuspendLayout();
             groupBoxEndereço.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.dd2oj85_b5bab19d_e110_4f51_ae2b_ca39dd6d8d74;
-            pictureBox1.Location = new Point(1837, 9);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(55, 47);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
-            // 
             // buttonVoltarMenu
             // 
             buttonVoltarMenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonVoltarMenu.BackColor = Color.Transparent;
             buttonVoltarMenu.Cursor = Cursors.Hand;
             buttonVoltarMenu.FlatStyle = FlatStyle.Flat;
+            buttonVoltarMenu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonVoltarMenu.ForeColor = Color.White;
             buttonVoltarMenu.Location = new Point(1817, 1006);
             buttonVoltarMenu.Name = "buttonVoltarMenu";
             buttonVoltarMenu.Size = new Size(75, 23);
             buttonVoltarMenu.TabIndex = 6;
             buttonVoltarMenu.Text = "Voltar ";
-            buttonVoltarMenu.UseVisualStyleBackColor = true;
+            buttonVoltarMenu.UseVisualStyleBackColor = false;
             buttonVoltarMenu.Click += buttonVoltarMenu_Click;
             // 
             // textBox1
@@ -213,9 +204,8 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 9);
             label2.Name = "label2";
-            label2.Size = new Size(154, 15);
+            label2.Size = new Size(0, 15);
             label2.TabIndex = 22;
-            label2.Text = "Informe os dados do cliente";
             // 
             // labelNumero
             // 
@@ -263,19 +253,23 @@
             // buttonCadastrar
             // 
             buttonCadastrar.Anchor = AnchorStyles.None;
+            buttonCadastrar.BackColor = Color.Transparent;
             buttonCadastrar.BackgroundImageLayout = ImageLayout.None;
             buttonCadastrar.Cursor = Cursors.Hand;
             buttonCadastrar.FlatStyle = FlatStyle.Flat;
-            buttonCadastrar.Location = new Point(845, 642);
+            buttonCadastrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonCadastrar.ForeColor = Color.White;
+            buttonCadastrar.Location = new Point(925, 743);
             buttonCadastrar.Name = "buttonCadastrar";
             buttonCadastrar.Size = new Size(75, 23);
             buttonCadastrar.TabIndex = 28;
             buttonCadastrar.Text = "Cadastrar";
-            buttonCadastrar.UseVisualStyleBackColor = true;
+            buttonCadastrar.UseVisualStyleBackColor = false;
             // 
             // groupBoxDadosCliente
             // 
             groupBoxDadosCliente.Anchor = AnchorStyles.None;
+            groupBoxDadosCliente.BackColor = Color.Transparent;
             groupBoxDadosCliente.Controls.Add(label9);
             groupBoxDadosCliente.Controls.Add(label8);
             groupBoxDadosCliente.Controls.Add(label7);
@@ -294,9 +288,10 @@
             groupBoxDadosCliente.Controls.Add(labelEmail);
             groupBoxDadosCliente.Controls.Add(labelTelefone);
             groupBoxDadosCliente.Controls.Add(textBox3);
-            groupBoxDadosCliente.Location = new Point(509, 282);
+            groupBoxDadosCliente.ForeColor = SystemColors.ButtonFace;
+            groupBoxDadosCliente.Location = new Point(509, 356);
             groupBoxDadosCliente.Name = "groupBoxDadosCliente";
-            groupBoxDadosCliente.Size = new Size(776, 128);
+            groupBoxDadosCliente.Size = new Size(911, 158);
             groupBoxDadosCliente.TabIndex = 29;
             groupBoxDadosCliente.TabStop = false;
             groupBoxDadosCliente.Text = "Dados básicos";
@@ -409,6 +404,7 @@
             // groupBoxEndereço
             // 
             groupBoxEndereço.Anchor = AnchorStyles.None;
+            groupBoxEndereço.BackColor = Color.Transparent;
             groupBoxEndereço.Controls.Add(label12);
             groupBoxEndereço.Controls.Add(label11);
             groupBoxEndereço.Controls.Add(label10);
@@ -426,9 +422,10 @@
             groupBoxEndereço.Controls.Add(labelCEP);
             groupBoxEndereço.Controls.Add(labelComplemento);
             groupBoxEndereço.Controls.Add(textBox9);
-            groupBoxEndereço.Location = new Point(509, 425);
+            groupBoxEndereço.ForeColor = Color.White;
+            groupBoxEndereço.Location = new Point(509, 520);
             groupBoxEndereço.Name = "groupBoxEndereço";
-            groupBoxEndereço.Size = new Size(776, 184);
+            groupBoxEndereço.Size = new Size(911, 144);
             groupBoxEndereço.TabIndex = 30;
             groupBoxEndereço.TabStop = false;
             groupBoxEndereço.Text = "Endereço";
@@ -487,17 +484,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1904, 1041);
             Controls.Add(groupBoxEndereço);
             Controls.Add(groupBoxDadosCliente);
             Controls.Add(buttonCadastrar);
             Controls.Add(label2);
             Controls.Add(buttonVoltarMenu);
-            Controls.Add(pictureBox1);
             Name = "CriarCliente";
             Text = "CriarCliente";
             WindowState = FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBoxDadosCliente.ResumeLayout(false);
             groupBoxDadosCliente.PerformLayout();
             groupBoxEndereço.ResumeLayout(false);

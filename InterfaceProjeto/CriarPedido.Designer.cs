@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriarPedido));
             buttonVoltarMenu = new Button();
             dataGridViewCliente = new DataGridView();
             buttonBuscarCliente = new Button();
@@ -49,13 +50,11 @@
             labelValor = new Label();
             textBoxValor = new TextBox();
             label1 = new Label();
-            pictureBox2 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCliente).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewJogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPedido).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // buttonVoltarMenu
@@ -73,7 +72,7 @@
             // 
             dataGridViewCliente.BackgroundColor = Color.Gray;
             dataGridViewCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCliente.Location = new Point(297, 160);
+            dataGridViewCliente.Location = new Point(300, 252);
             dataGridViewCliente.Name = "dataGridViewCliente";
             dataGridViewCliente.Size = new Size(536, 216);
             dataGridViewCliente.TabIndex = 8;
@@ -81,7 +80,7 @@
             // buttonBuscarCliente
             // 
             buttonBuscarCliente.Cursor = Cursors.Hand;
-            buttonBuscarCliente.Location = new Point(727, 110);
+            buttonBuscarCliente.Location = new Point(730, 202);
             buttonBuscarCliente.Name = "buttonBuscarCliente";
             buttonBuscarCliente.Size = new Size(75, 23);
             buttonBuscarCliente.TabIndex = 9;
@@ -91,7 +90,7 @@
             // buttonBuscarPedido
             // 
             buttonBuscarPedido.Cursor = Cursors.Hand;
-            buttonBuscarPedido.Location = new Point(1442, 110);
+            buttonBuscarPedido.Location = new Point(1445, 202);
             buttonBuscarPedido.Name = "buttonBuscarPedido";
             buttonBuscarPedido.Size = new Size(75, 23);
             buttonBuscarPedido.TabIndex = 10;
@@ -100,14 +99,14 @@
             // 
             // textBoxBuscarCliente
             // 
-            textBoxBuscarCliente.Location = new Point(392, 110);
+            textBoxBuscarCliente.Location = new Point(395, 202);
             textBoxBuscarCliente.Name = "textBoxBuscarCliente";
             textBoxBuscarCliente.Size = new Size(329, 23);
             textBoxBuscarCliente.TabIndex = 11;
             // 
             // textBoxBuscarPedido
             // 
-            textBoxBuscarPedido.Location = new Point(1107, 110);
+            textBoxBuscarPedido.Location = new Point(1110, 202);
             textBoxBuscarPedido.Name = "textBoxBuscarPedido";
             textBoxBuscarPedido.Size = new Size(329, 23);
             textBoxBuscarPedido.TabIndex = 12;
@@ -115,7 +114,7 @@
             // buttonAdicionar
             // 
             buttonAdicionar.Cursor = Cursors.Hand;
-            buttonAdicionar.Location = new Point(1561, 160);
+            buttonAdicionar.Location = new Point(1564, 252);
             buttonAdicionar.Name = "buttonAdicionar";
             buttonAdicionar.Size = new Size(75, 23);
             buttonAdicionar.TabIndex = 13;
@@ -146,7 +145,7 @@
             // 
             dataGridViewJogo.BackgroundColor = Color.Gray;
             dataGridViewJogo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewJogo.Location = new Point(1019, 160);
+            dataGridViewJogo.Location = new Point(1022, 252);
             dataGridViewJogo.Name = "dataGridViewJogo";
             dataGridViewJogo.Size = new Size(536, 216);
             dataGridViewJogo.TabIndex = 16;
@@ -163,7 +162,7 @@
             // labelCliente
             // 
             labelCliente.AutoSize = true;
-            labelCliente.Location = new Point(339, 114);
+            labelCliente.Location = new Point(342, 206);
             labelCliente.Name = "labelCliente";
             labelCliente.Size = new Size(47, 15);
             labelCliente.TabIndex = 18;
@@ -172,7 +171,7 @@
             // labelJogo
             // 
             labelJogo.AutoSize = true;
-            labelJogo.Location = new Point(1066, 113);
+            labelJogo.Location = new Point(1069, 205);
             labelJogo.Name = "labelJogo";
             labelJogo.Size = new Size(35, 15);
             labelJogo.TabIndex = 19;
@@ -181,7 +180,7 @@
             // labelAvisoCliente
             // 
             labelAvisoCliente.AutoSize = true;
-            labelAvisoCliente.Location = new Point(559, 397);
+            labelAvisoCliente.Location = new Point(562, 489);
             labelAvisoCliente.Name = "labelAvisoCliente";
             labelAvisoCliente.Size = new Size(38, 15);
             labelAvisoCliente.TabIndex = 20;
@@ -190,7 +189,7 @@
             // labelAvisoJogo
             // 
             labelAvisoJogo.AutoSize = true;
-            labelAvisoJogo.Location = new Point(1285, 397);
+            labelAvisoJogo.Location = new Point(1288, 489);
             labelAvisoJogo.Name = "labelAvisoJogo";
             labelAvisoJogo.Size = new Size(38, 15);
             labelAvisoJogo.TabIndex = 21;
@@ -247,21 +246,10 @@
             label1.TabIndex = 27;
             label1.Text = "Pedido:";
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox2.Image = Properties.Resources.dd2oj85_b5bab19d_e110_4f51_ae2b_ca39dd6d8d74;
-            pictureBox2.Location = new Point(1837, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(55, 47);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 28;
-            pictureBox2.TabStop = false;
-            // 
             // button1
             // 
             button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(839, 160);
+            button1.Location = new Point(842, 252);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 29;
@@ -282,10 +270,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1904, 1041);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(pictureBox2);
             Controls.Add(label1);
             Controls.Add(textBoxValor);
             Controls.Add(labelValor);
@@ -313,7 +301,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewCliente).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewJogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPedido).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -342,7 +329,6 @@
         private Label labelValor;
         private TextBox textBoxValor;
         private Label label1;
-        private PictureBox pictureBox2;
         private Button button1;
         private Button button2;
     }

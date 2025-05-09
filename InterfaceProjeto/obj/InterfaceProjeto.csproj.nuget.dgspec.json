@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Senac---Programador-de-sistemas-\\InterfaceProjeto\\InterfaceProjeto.csproj": {}
+    "C:\\Users\\eduardo.glira\\programador\\Nova pasta\\senacsistemas\\InterfaceProjeto\\InterfaceProjeto.csproj": {}
   },
   "projects": {
-    "D:\\Senac---Programador-de-sistemas-\\InterfaceProjeto\\InterfaceProjeto.csproj": {
+    "C:\\Users\\eduardo.glira\\programador\\Nova pasta\\senacsistemas\\InterfaceProjeto\\InterfaceProjeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Senac---Programador-de-sistemas-\\InterfaceProjeto\\InterfaceProjeto.csproj",
+        "projectUniqueName": "C:\\Users\\eduardo.glira\\programador\\Nova pasta\\senacsistemas\\InterfaceProjeto\\InterfaceProjeto.csproj",
         "projectName": "InterfaceProjeto",
-        "projectPath": "D:\\Senac---Programador-de-sistemas-\\InterfaceProjeto\\InterfaceProjeto.csproj",
-        "packagesPath": "C:\\Users\\valerya.cbquirino\\.nuget\\packages\\",
-        "outputPath": "D:\\Senac---Programador-de-sistemas-\\InterfaceProjeto\\obj\\",
+        "projectPath": "C:\\Users\\eduardo.glira\\programador\\Nova pasta\\senacsistemas\\InterfaceProjeto\\InterfaceProjeto.csproj",
+        "packagesPath": "C:\\Users\\eduardo.glira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eduardo.glira\\programador\\Nova pasta\\senacsistemas\\InterfaceProjeto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\valerya.cbquirino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduardo.glira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

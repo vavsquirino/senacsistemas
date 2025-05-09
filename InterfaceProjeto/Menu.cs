@@ -39,5 +39,17 @@ namespace InterfaceProjeto
             buttonCriarCliente.BackColor = SystemColors.Control;
             buttonCriarCliente.ForeColor = Color.Black;
         }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRelatorio_Click(object sender, EventArgs e)
+        {
+            Historico historico = new Historico();
+            historico.Show();
+            this.Hide();
+        }
     }
 }

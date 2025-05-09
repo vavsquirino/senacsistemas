@@ -33,24 +33,22 @@
             label1 = new Label();
             buttonCriarCliente = new Button();
             buttonEditarPedido = new Button();
+            buttonRelatorio = new Button();
             SuspendLayout();
             // 
             // buttonCriarPedido
             // 
             buttonCriarPedido.Anchor = AnchorStyles.None;
-            buttonCriarPedido.BackColor = Color.FromArgb(224, 224, 224);
+            buttonCriarPedido.BackColor = Color.Transparent;
             buttonCriarPedido.Cursor = Cursors.Hand;
-            buttonCriarPedido.FlatAppearance.BorderSize = 0;
             buttonCriarPedido.FlatStyle = FlatStyle.Flat;
             buttonCriarPedido.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            buttonCriarPedido.ForeColor = SystemColors.ActiveCaptionText;
-            buttonCriarPedido.Image = (Image)resources.GetObject("buttonCriarPedido.Image");
-            buttonCriarPedido.Location = new Point(805, 430);
+            buttonCriarPedido.ForeColor = Color.AliceBlue;
+            buttonCriarPedido.Location = new Point(561, 377);
             buttonCriarPedido.Name = "buttonCriarPedido";
-            buttonCriarPedido.Size = new Size(300, 300);
+            buttonCriarPedido.Size = new Size(381, 150);
             buttonCriarPedido.TabIndex = 0;
-            buttonCriarPedido.Text = "\r\n\r\nCriar pedido";
-            buttonCriarPedido.TextAlign = ContentAlignment.TopCenter;
+            buttonCriarPedido.Text = "Criar pedido";
             buttonCriarPedido.UseVisualStyleBackColor = false;
             buttonCriarPedido.Click += buttonCriarPedido_Click;
             // 
@@ -60,26 +58,22 @@
             label1.AutoSize = true;
             label1.Location = new Point(915, 1013);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 1;
-            label1.Text = "label1";
             // 
             // buttonCriarCliente
             // 
             buttonCriarCliente.Anchor = AnchorStyles.None;
-            buttonCriarCliente.BackColor = Color.FromArgb(224, 224, 224);
+            buttonCriarCliente.BackColor = Color.Transparent;
             buttonCriarCliente.Cursor = Cursors.Hand;
-            buttonCriarCliente.FlatAppearance.BorderSize = 0;
             buttonCriarCliente.FlatStyle = FlatStyle.Flat;
             buttonCriarCliente.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonCriarCliente.ForeColor = Color.Black;
-            buttonCriarCliente.Image = (Image)resources.GetObject("buttonCriarCliente.Image");
-            buttonCriarCliente.Location = new Point(499, 430);
+            buttonCriarCliente.ForeColor = Color.White;
+            buttonCriarCliente.Location = new Point(561, 545);
             buttonCriarCliente.Name = "buttonCriarCliente";
-            buttonCriarCliente.Size = new Size(300, 300);
+            buttonCriarCliente.Size = new Size(381, 150);
             buttonCriarCliente.TabIndex = 2;
-            buttonCriarCliente.Text = "\r\n\r\nCriar cliente";
-            buttonCriarCliente.TextAlign = ContentAlignment.TopCenter;
+            buttonCriarCliente.Text = "Criar Cliente\r\n";
             buttonCriarCliente.UseVisualStyleBackColor = false;
             buttonCriarCliente.Click += buttonCriarCliente_Click;
             buttonCriarCliente.MouseEnter += buttonCriarCliente_MouseEnter;
@@ -88,21 +82,34 @@
             // buttonEditarPedido
             // 
             buttonEditarPedido.Anchor = AnchorStyles.None;
-            buttonEditarPedido.BackColor = Color.FromArgb(224, 224, 224);
+            buttonEditarPedido.BackColor = Color.Transparent;
             buttonEditarPedido.Cursor = Cursors.Hand;
-            buttonEditarPedido.FlatAppearance.BorderSize = 0;
             buttonEditarPedido.FlatStyle = FlatStyle.Flat;
             buttonEditarPedido.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            buttonEditarPedido.ForeColor = Color.Black;
-            buttonEditarPedido.Image = (Image)resources.GetObject("buttonEditarPedido.Image");
-            buttonEditarPedido.Location = new Point(1111, 430);
+            buttonEditarPedido.ForeColor = Color.White;
+            buttonEditarPedido.Location = new Point(1006, 377);
             buttonEditarPedido.Name = "buttonEditarPedido";
-            buttonEditarPedido.Size = new Size(300, 300);
+            buttonEditarPedido.Size = new Size(407, 150);
             buttonEditarPedido.TabIndex = 3;
-            buttonEditarPedido.Text = "\r\n\r\nEditar pedido ";
-            buttonEditarPedido.TextAlign = ContentAlignment.TopCenter;
+            buttonEditarPedido.Text = "Editar pedido ";
             buttonEditarPedido.UseVisualStyleBackColor = false;
             buttonEditarPedido.Click += buttonEditarPedido_Click;
+            // 
+            // buttonRelatorio
+            // 
+            buttonRelatorio.Anchor = AnchorStyles.None;
+            buttonRelatorio.BackColor = Color.Transparent;
+            buttonRelatorio.Cursor = Cursors.Hand;
+            buttonRelatorio.FlatStyle = FlatStyle.Flat;
+            buttonRelatorio.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonRelatorio.ForeColor = Color.White;
+            buttonRelatorio.Location = new Point(1006, 545);
+            buttonRelatorio.Name = "buttonRelatorio";
+            buttonRelatorio.Size = new Size(407, 150);
+            buttonRelatorio.TabIndex = 4;
+            buttonRelatorio.Text = "Relatórios";
+            buttonRelatorio.UseVisualStyleBackColor = false;
+            buttonRelatorio.Click += buttonRelatorio_Click;
             // 
             // FormMenu
             // 
@@ -111,10 +118,11 @@
             BackColor = Color.WhiteSmoke;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1900, 1037);
+            Controls.Add(buttonCriarPedido);
+            Controls.Add(buttonRelatorio);
             Controls.Add(buttonEditarPedido);
             Controls.Add(buttonCriarCliente);
             Controls.Add(label1);
-            Controls.Add(buttonCriarPedido);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -122,6 +130,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
             WindowState = FormWindowState.Maximized;
+            Load += FormMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,5 +141,6 @@
         private Label label1;
         private Button buttonCriarCliente;
         private Button buttonEditarPedido;
+        private Button buttonRelatorio;
     }
 }
